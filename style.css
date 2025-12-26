@@ -1,0 +1,156 @@
+/* Estilos Gerais */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+    --text-color: #343a40;
+    --white: #ffffff;
+    --border-color: #dee2e6;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header e Navegação */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    background-color: #0056b3; /* Um tom mais escuro */
+}
+
+/* Container Principal */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de Formulário */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que padding não aumenta a largura total */
+}
+
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos da Tabela (Admin) */
+.tabela-container {
+    overflow-x: auto; /* Garante que a tabela não quebre em telas pequenas */
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    border: 1px solid var(--border-color);
+    padding: 12px 15px;
+    text-align: left;
+}
+
+table th {
+    background-color: #e9ecef;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Nota Importante */
+.nota-importante {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* ... (Mantenha todos os estilos anteriores) ... */
+
+/* Adicionar o estilo para o novo campo Select */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="date"],
+.form-group input[type="time"], /* Adicionado */
+.form-group select /* Adicionado */ {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+/* ... (Mantenha o restante dos estilos inalterados) ... */
+
